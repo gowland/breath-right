@@ -4,13 +4,9 @@
   <style>
 
 div.animated:focus {
-  /* animation properties */
-  animation-name: my-animation;
-  animation-duration: 10s;
-  animation-direction: alternate;
-  animation-iteration-count: 50;
-  -webkit-animation-timing-function: ease-in-out; /* Chrome, Safari, Opera */
-  animation-timing-function: ease-in-out;
+
+  animation: my-animation 10s alternate ease-in-out 50, fade 300s linear forwards;
+  -webkit-animation: my-animation 10s alternate ease-in-out 50, fade 300s linear forwards;
 }
 div.animated:active {
   -webkit-animation: none;
@@ -36,6 +32,15 @@ div.animated:active {
   to {
     -webkit-transform: scale(0.48, 0.48);
             transform: scale(0.48, 0.48);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1.0;
+  }
+  100% {
+    opacity: 0.3;
   }
 }
 
