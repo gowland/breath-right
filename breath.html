@@ -3,6 +3,7 @@
 <head>
   <style>
 
+
 div.animated:focus {
 
   animation: my-animation 10s alternate ease-in-out 50, fade 300s linear forwards;
@@ -67,6 +68,13 @@ div.breath {
   align-items: center;
   justify-content: center;
 }
+
+div.breath:has(+ div.breath:focus-within)
+{
+  animation: fade 300s linear forwards;
+  -webkit-animation: fade 300s linear forwards;
+}
+
 
 .video {
   position: relative;
