@@ -13,3 +13,4 @@
 * [5 minutes total; 10 seconds in, 10 seconds out](breath%205%20min.html) 
 * [~5 minutes total; 5 seconds in, 20 seconds out](breath%20out%20slow.html)
 * [8 minutes total; 10 seconds in, 10 seconds out; timer only shows for first 2 minutes and last 10 seconds](breath%20unassisted.html)
+* [~5 minutes total; start 10 seconds in, 10 seconds out; end 13.3 seconds in, 13.3 seconds out](breath%20increasingly%20slowly.html)
