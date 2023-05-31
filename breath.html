@@ -6,8 +6,8 @@
 
 div.animated:focus {
 
-  animation: my-animation 10s alternate ease-in-out 50, fade 300s linear forwards;
-  -webkit-animation: my-animation 10s alternate ease-in-out 50, fade 300s linear forwards;
+  animation: my-animation 10s alternate ease-in-out 50;
+  -webkit-animation: my-animation 10s alternate ease-in-out 50;
 }
 div.animated:active {
   -webkit-animation: none;
@@ -36,26 +36,18 @@ div.animated:active {
   }
 }
 
-@keyframes fade {
-  0% {
-    opacity: 1.0;
-  }
-  100% {
-    opacity: 0.3;
-  }
-}
-
 div.outer {
   width: 48px;
   height: 48px;
   border-radius: 50%;
   background-color: transparent;
   border-width: 58px;
-  border-color: rgba(76, 76, 76, 0.3);  
+  border-color: rgba(76, 76, 76, 0.5);  
   border-style: solid;
   display: flex;
   align-items: center;
   justify-content: center;
+  backdrop-filter: blur(6px);
 }
 
 div.breath {
@@ -68,13 +60,6 @@ div.breath {
   align-items: center;
   justify-content: center;
 }
-
-div.breath:has(+ div.breath:focus-within)
-{
-  animation: fade 300s linear forwards;
-  -webkit-animation: fade 300s linear forwards;
-}
-
 
 .video {
   position: relative;
